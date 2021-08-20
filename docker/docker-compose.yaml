@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+    my-postgresql-database:
+        image: postgres:latest
+        restart: always
+        volumes:
+        - my-postgresql-database:/var/lib/postgresql/data
+        environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
+        ports:
+        - "5487:5432"
+
+volumes:
+    my-postgresql-database: ~

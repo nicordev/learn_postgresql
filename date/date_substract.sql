@@ -1,0 +1,1 @@
+select '2021-08-14 00:00:00'::date - interval '4 days';
