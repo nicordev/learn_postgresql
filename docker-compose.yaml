@@ -6,6 +6,7 @@ services:
         restart: always
         volumes:
         - my-postgresql-database:/var/lib/postgresql/data
+        - ./:/app
         environment:
         - POSTGRES_USER=postgres
         - POSTGRES_PASSWORD=postgres
