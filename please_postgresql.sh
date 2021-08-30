@@ -19,6 +19,10 @@ start() {
     docker-compose up --detach --remove-orphans --force-recreate
 }
 
+stop() {
+    docker-compose down
+}
+
 psql() {
     $PSQL
 }

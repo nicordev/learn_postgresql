@@ -6,7 +6,8 @@ services:
         restart: always
         volumes:
         - my-postgresql-database:/var/lib/postgresql/data
-        - ./:/app
+        - ./:/learn_postgresql
+        working_dir: /learn_postgresql
         environment:
         - POSTGRES_USER=postgres
         - POSTGRES_PASSWORD=postgres
