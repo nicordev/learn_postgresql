@@ -1,5 +1,9 @@
 -- convert hexadecimal to decimal
 
+-- ff => 255
+select ('x' || lpad('ff', 16, '0'))::bit(64)::bigint as decimal_int8_value
+
+-- some values
 SELECT ('x' || lpad(temporary_table_column_hexadecimal_value, 16, '0'))::bit(64)::bigint AS decimal_int8_value
 FROM  (
    VALUES
