@@ -1,6 +1,6 @@
 -- convert hexadecimal to decimal
 
--- ff => 255
+-- ff => 255: this is the value we want to convert
 select ('x' || lpad('ff', 16, '0'))::bit(64)::bigint as decimal_int8_value
 
 -- some values
