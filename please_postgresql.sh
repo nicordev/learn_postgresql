@@ -5,7 +5,6 @@ SCRIPT_NAME=$(basename $BASH_SOURCE)
 POSTGRESQL_SERVICE='my-postgresql-database'
 PSQL="docker-compose exec ${POSTGRESQL_SERVICE} psql --username postgres --dbname postgres"
 
-
 executeSqlFile() {
     if [ $# -lt 1 ]; then
         echo -e "${SCRIPT_NAME} ${FUNCNAME[0]} \e[33mfileNameHere\e[0m"
@@ -24,7 +23,7 @@ stop() {
 }
 
 psql() {
-    $PSQL
+    $PSQL $*
 }
 
 bash() {
