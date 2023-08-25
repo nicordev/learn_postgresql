@@ -1,5 +1,5 @@
 create table fruits (
-    id bigserial,
+    id bigserial primary key,
     name varchar(255) not null,
     description jsonb,
     created_at date,
