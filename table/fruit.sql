@@ -1,4 +1,4 @@
-create table fruits (
+create table fruit (
     id bigserial primary key,
     name varchar(255) not null,
     description jsonb,
@@ -7,7 +7,7 @@ create table fruits (
     deleted_at date
 );
 
-insert into fruits(name, created_at)
+insert into fruit(name, created_at)
 values (
     'apple',
     now(),
@@ -15,4 +15,4 @@ values (
     null,
 )
 
--- drop table fruits;
+-- drop table fruit;

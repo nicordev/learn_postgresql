@@ -11,6 +11,7 @@ values
 ('banana')
 ;
 
-select *
+select "name"
 from fruit
+order by random()
 ;
