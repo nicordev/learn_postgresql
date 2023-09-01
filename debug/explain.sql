@@ -1,0 +1,1 @@
+explain select 'hello world';
